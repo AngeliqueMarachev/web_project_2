@@ -1,4 +1,4 @@
-body {
+body, h1 {
   font-family: "Inter", Arial, sans-serif;
   overflow-x: hidden;
 }
