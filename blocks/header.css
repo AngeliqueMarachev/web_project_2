@@ -57,7 +57,7 @@
   z-index: 1;
 }
 
-.span__accent {
+.header__title_span__accent {
   font-family: "Noto Serif", Times New Roman, serif;
   color: #2f80ed;
   font-style: italic;
@@ -101,7 +101,7 @@
   flex-grow: 1;
 }
 
-.header__footer_column_hours {
+.header__footer_column-hours {
   margin: 0;
 }
 
