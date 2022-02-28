@@ -10,7 +10,6 @@
 .footer__content {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 100px;
   margin-left: 80px;
 }
 .footer__column_social {
@@ -56,3 +55,4 @@
   font-size: 16px;
   line-height: 20px;
 }
+
