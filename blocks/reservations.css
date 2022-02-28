@@ -103,8 +103,6 @@
   .form__input-checkbox[type="checkbox"] {
     width: 8px;
     height: 8px;
-    align-self: start;
-    border-radius: 0;
   }
   
   .form__checkbox-text {

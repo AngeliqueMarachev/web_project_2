@@ -7,9 +7,6 @@
   padding-bottom: 140px;
   color: white;
   position: relative;
-  /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
 }
 
 .menu__title {
@@ -92,10 +89,10 @@
   position: relative;
   padding-top: 15px;
   font-family: "Noto Serif", Times New Roman, serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .card__list-divider {
