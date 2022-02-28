@@ -27,12 +27,9 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  /* margin-left: 0;
-    margin-right: 0; */
   max-width: 780px;
   margin: auto;
   font-style: normal;
-  font-weight: normal;
 }
 
 .menu__card-container {
@@ -73,7 +70,6 @@
   margin: 0;
   font-family: "Inter";
   font-style: normal;
-  font-weight: bold;
 }
 
 .card__list {
