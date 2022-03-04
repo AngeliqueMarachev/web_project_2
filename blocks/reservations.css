@@ -102,10 +102,12 @@
   .form__input-checkbox[type="checkbox"] {
     width: 8px;
     height: 8px;
+  
   }
   
   .f.form__input-checkbox {
     padding-left: 20px;
+    
   }
   
   
