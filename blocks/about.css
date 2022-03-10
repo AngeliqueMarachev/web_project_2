@@ -1,74 +1,78 @@
-
 .about {
-    padding: 100px 80px;
-    background-color: #0a2750;
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    display: flex;
+  padding-top: 119px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #0a2750;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.about__title {
+  max-width: 254px;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.about__content {
+  display: inline;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 555px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 173px;
+  margin-left: auto;
+}
+
+.about__paragraph {
+  padding-bottom: 32px;
+  margin: 0;
+  font-family: "Noto Serif", Times New Roman, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about__paragraph:last-child {
+  padding-bottom: 173px;
+}
+
+.about__circle {
+  background-color: #2f80ed;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  position: absolute;
+  top: -152px;
+  left: -129px;
+  z-index: 1;
+}
+
+.about__circle_animation_blurred {
+  animation: pulse 1.3s ease-in-out infinite;
+
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
   }
-  
-  .about__title {
-    max-width: 254px;
-    position: relative;
-    z-index: 2;
-    margin: 0;
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 52px;
-    left: 80px;
-    top: 100px;
+  50% {
+    opacity: 0.6;
   }
-  
-  .about__content {
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    max-width: 555px;
-    margin: auto;
-    position: relative;
-    z-index: 3;
-    top: 119px;
-    margin-right: 80px;
-    margin-bottom: 173px;
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
   }
-  
-  .about__paragraph {
-    padding-bottom: 32px;
-    margin: 0;
-    font-family: "Noto Serif";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-  }
-  
-  .about__circle {
-    background-color: #2f80ed;
-    width: 430px;
-    height: 430px;
-    border-radius: 50%;
-    position: absolute;
-    top: -152px;
-    left: -129px;
-  }
-  
-  .about__circle_animation_blurred {
-    animation: pulse 1.3s ease-in-out infinite;
-  }
-  
-  @keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 0;
-      transform: scale(1.2);
-    }
-  }
+}

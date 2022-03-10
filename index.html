@@ -8,7 +8,7 @@
     <meta name="author" content="Angelique Marachev" />
     <title>Practicum Coffee Shop</title>
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" href="./favicon_circles.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,8 +26,7 @@
             alt="Practicum Coffee Shop Logo"
             class="logo"
           />
-
-          <div class="nav-links">
+          <div class="nav__links">
             <a class="nav__link" href="#menu">Menu</a>
             <a class="nav__link" href="#recipes">Recipes</a>
             <a class="nav__link" href="#book">Book a table</a>
@@ -35,11 +34,8 @@
           </div>
         </nav>
 
-        <h1 class="header__title">
-          <span class="header__title-span-accent">Speciality coffee</span>
-         
-          in the Practicum Library
-        </h1>
+        <span class="header__span-accent">Speciality coffee</span> 
+        <h1 class="header__title">in the Practicum Library</h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
           the cozy vibes to help you get creative.
@@ -53,17 +49,14 @@
 
         <div class="header__footer">
           <div class="header__footer-hours">
-            <h4 class="header__hours">Hours</h4>
-            <p class="header__hours">Monday - Friday (10:00 - 19:00)</p>
-            <p class="header__hours">Saturday - Sunday (11:00 - 18:00)</p>
+            <p class="header__footer-hours">Hours</p>
+            <p class="header__footer-hours">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__footer-hours">Saturday - Sunday (11:00 - 18:00)</p>
           </div>
-          <p class="header__address">
-            200 Success Avenue, The Town of Practicum
-          </p>
+          <p class="header__address">200 Success Avenue, The Town of Practicum</p>
         </div>
       </header>
-    </div>
-
+    
     <main class="content">
       <section id="menu" class="menu">
         <h2 class="menu__title">Menu</h2>
@@ -73,8 +66,7 @@
         </p>
 
         <div class="menu__card-container">
-          <div class="menu__cards">
-            <div class="card">
+            <article class="card">
               <h3 class="card__title">Filter</h3>
               <ul class="card__list">
                 <li class="card__list-item">
@@ -97,11 +89,9 @@
                   $1.25
                 </li>
               </ul>
-            </div>
-          </div>
+            </article>
 
-          <div class="menu__cards">
-            <div class="card">
+            <article class="card">
               <h3 class="card__title">Espresso</h3>
               <ul class="card__list">
                 <li class="card__list-item">
@@ -120,11 +110,9 @@
                   $10
                 </li>
               </ul>
-            </div>
-          </div>
+            </article>
 
-          <div class="menu__cards">
-            <div class="card">
+            <article class="card">
               <h3 class="card__title">Baked Goods</h3>
               <ul class="card__list">
                 <li class="card__list-item">
@@ -146,8 +134,7 @@
                   Fresh Bug’uette <span class="card__list-divider"></span>$0.25
                 </li>
               </ul>
-            </div>
-          </div>
+            </article>
         </div>
       </section>
 
@@ -158,8 +145,8 @@
           convenience:
         </p>
 
-        <div class="recipes__videos">
-          <div class="recipes__video-container">
+        <ul class="recipes__videos">
+          <li class="recipes__video-container">
             <iframe
               class="recipes__iframe"
               src="https://www.youtube.com/embed/j6VlT_jUVPc?controls=0"
@@ -167,9 +154,9 @@
             <p class="recipes__video-caption">
               <span>Aeropress recipe</span> <span>~5 min</span>
             </p>
-          </div>
+          </li>
 
-          <div class="recipes__video-container">
+          <li class="recipes__video-container">
             <iframe
               class="recipes__iframe"
               src="https://www.youtube.com/embed/st571DYYTR8?controls=0"
@@ -177,66 +164,64 @@
             <p class="recipes__video-caption">
               <span> French press recipe</span> <span>~15 min</span>
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <section id="book" class="reservation">
+        <h2 class="reservation__title">Book a table</h2>
+
         <form class="form reservation__form">
-          <h2 class="reservation__title">Book a table</h2>
           <fieldset class="form__fieldset">
             <label class="form__label" for="name">Name</label>
             <input
               type="text"
               required
-              class="form__input"
+              class="form__input_name"
               id="name"
               name="name"
               placeholder="Name Surname"
             />
-          </fieldset>
-          <fieldset class="form__fieldset">
+         
             <label class="form__label" for="guests">Number of guests</label>
             <input
               type="number"
               required
-              class="form__input"
+              class="form__input_guests"
               id="guests"
               min="1"
               max="8"
               placeholder="1-8"
             />
-          </fieldset>
-          <fieldset class="form__fieldset">
+        
             <label class="form__label" for="date">Date & time</label>
             <input
               type="date"
               required
-              class="form__input"
+              class="form__input_date"
               id="date"
             />
 
-          </fieldset>
-          <fieldset class="form__fieldset">
             <label class="form__label" for="email">Your email</label>
             <input
               type="text"
               required
-              class="form__input"
+              class="form__input_email"
               id="email"
               name="email"
               placeholder="email@email.com"
             />
           </fieldset>
+
           <fieldset class="form__fieldset">
             <button type="submit" class="form__button">Book a table</button>
           </fieldset>
 
           <fieldset class="form__fieldset">
-          </fieldset>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="">I agree with the terms of use
+          <label class="form__label_checkbox">
+            <input type="checkbox" value="terms">I agree with the terms of use
           </label>
+        </fieldset>
         </form>
       </section>
 
@@ -263,14 +248,14 @@
 
   <footer id="contacts" class="footer">
     <div class="footer__content">
-      <div class="footer__logo">
+      <img
           src="./images/logo_practicum.svg"
           alt="Practicum Library Logo"
           class="footer__logo"
         />
-      </div>
-      <div class="footer__social-heading">
-        <h3>Social media</h3>
+
+      <div class="footer__social-media">
+        <div class="footer__social-media social-media__heading">Social media</div>
         <ul class="footer__list">
           <li class="footer__list-item">
             <a href="#" class="footer__social-icon"></a>
@@ -282,11 +267,12 @@
             <img src="images/instagram_white.svg" alt="Instagram icon" />
             Instagram
           </li>
-          <li class="footer__social-link"></li>
         </ul>
       </div>
-    </div>
+ </div>
     <p class="footer__copyright">© 2022 Angelique Marachev</p>
+  </div>
   </footer>
+</div>
 </body>
 </html>

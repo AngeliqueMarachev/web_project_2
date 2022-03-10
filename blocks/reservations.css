@@ -1,114 +1,112 @@
 .reservation {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../images/background_reservation.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #d9e7ff;
-  }
-  
-  .reservation__form {
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding-bottom: 120px;
-    text-align: center;
-    font-family: "Inter", Arial sans-serif;
-  }
-  
-  .reservation__title {
-    font-family: "Inter", Arial sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 52px;
-    margin: auto;
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
-  
-  .form__fieldset {
-    border: none;
-  }
-  
-  .form__label {
-    display: block;
-    line-height: 20px;
-    margin-bottom: 12px;
-    margin-top: 32px;
-    text-align: left;
-    font-family: "Inter", Arial sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-  }
-  
-  .form__label[for="terms of use"] {
-    display: inline;
-    margin-left: 12px;
-    vertical-align: center;
-    font-weight: 400;
-  }
-  
-  .form__input {
-    background: #ffffff;
-    border: 1px solid #cfcfcf;
-    box-sizing: border-box;
-    padding: 24px;
-    max-width: 385px;
-    font-family: "Inter", Arial sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #838383;
-  }
-  
-  .form__input[type="text"],
-  .form__input[type="number"],
-  .form__input[type="date"],
-  .form__input[type="email"] {
-    min-width: 385px;
-    max-height: 32px;
-  }
-  
-  .form__input::placeholder {
-    font-size: 16px;
-    color: #8b8b8b;
-  }
-  
-  .form__button[type="submit"] {
-    min-width: 385px;
-    min-height: 60px;
-    background: #2f71e5;
-    color: #ffffff;
-    font-family: "Inter", Arial sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    border: none;
-    opacity: 1;
-    transition: background-color 2s linear 0s;
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-  
-  .form__button:hover {
-    opacity: 0.7;
-  }
-  
-  .form__input-checkbox[type="checkbox"] {
-    width: 8px;
-    height: 8px;
-  
-  }
-  
-  .f.form__input-checkbox {
-    padding-left: 20px;
-    
-  }
-  
-  
-  
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/background_reservation.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d9e7ff;
+}
+
+.reservation__title {
+  font-family: "Inter", Arial sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.reservation__form {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 120px;
+  text-align: center;
+  font-family: "Inter", Arial sans-serif;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__label:first-child {
+  margin-top: 0px;
+}
+
+.form__label {
+  display: block;
+  line-height: 20px;
+  margin-bottom: 12px;
+  margin-top: 32px;
+  text-align: left;
+  font-family: "Inter", Arial sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.form__label_checkbox {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  gap: 15px;
+}
+
+.form__input_name,
+.form__input_guests,
+.form__input_date,
+.form__input_email {
+  min-width: 385px;
+  max-width: 385px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  box-sizing: border-box;
+  padding: 24px;
+  font-family: "Inter", Arial sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+}
+
+
+
+.form__input::placeholder {
+  font-size: 16px;
+  color: #8b8b8b;
+}
+
+.form__button {
+  min-width: 385px;
+  min-height: 60px;
+  background: #2f71e5;
+  color: #ffffff;
+  font-family: "Inter", Arial sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  opacity: 1;
+  transition: background-color 2s linear 0s;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 0;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+
+.form__input_checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 0;
+}
