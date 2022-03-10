@@ -50,17 +50,17 @@
   font-size: 16px;
 }
 
-.form__label_checkbox {
+.form__label-checkbox {
   display: flex;
   justify-content: center;
   font-weight: 400;
   gap: 15px;
 }
 
-.form__input_name,
-.form__input_guests,
-.form__input_date,
-.form__input_email {
+.form__input-name,
+.form__input-guests,
+.form__input-date,
+.form__input-email {
   min-width: 385px;
   max-width: 385px;
   height: 60px;
