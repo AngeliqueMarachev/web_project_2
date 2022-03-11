@@ -50,17 +50,14 @@
   font-size: 16px;
 }
 
-.form__label-checkbox {
+.form__label_checkbox {
   display: flex;
   justify-content: center;
   font-weight: 400;
   gap: 15px;
 }
 
-.form__input-name,
-.form__input-guests,
-.form__input-date,
-.form__input-email {
+.form__input {
   min-width: 385px;
   max-width: 385px;
   height: 60px;
@@ -75,8 +72,6 @@
   line-height: 30px;
   color: #838383;
 }
-
-
 
 .form__input::placeholder {
   font-size: 16px;
