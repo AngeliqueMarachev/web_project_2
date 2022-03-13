@@ -33,23 +33,20 @@
   line-height: 20px;
 }
 
-.social-heading {
+.footer__social-heading {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 20px;
-  
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .footer__list {
   list-style: none;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
 }
 
 .footer__list-item {
@@ -58,11 +55,18 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  /* margin-left: 10px; */
 }
 
 .footer__list-item:last-child {
-  margin-top: 20px;
-  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+
+.footer__social-link {
+  color: white;
+  text-decoration: none;
 }
 
 .footer__social-icon {
@@ -70,6 +74,8 @@
   width: 10px;
   color: white;
   text-decoration: none;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .footer__copyright {

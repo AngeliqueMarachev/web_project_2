@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .nav__links {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    padding-right: 80px;
+    font-family: "Inter", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .nav__link {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .nav__link:hover {
+    color: #2f80ed;
+    transition-duration: 0.5s;
+  }
